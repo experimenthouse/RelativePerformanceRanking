@@ -71,9 +71,9 @@ Adjusting for teammates' differences in performance could be done by averaging t
 
 In this, B is the bonus received, P is the points of either driver, and X and Y are the points of the drivers. For example, if one driver receives 15 points and the other receives 5 points:
 
-  _B = 15 - ( 15 + 5 / 2 ) = 15 - 10 = 5 (points increase)
+  _B = 15 - ( 15 + 5 / 2 ) = 15 - 10 = 5_ (points increase)
 
-  _B = 5 - ( 15 + 5 / 2 ) = 5 - 10 = -5 (points decrease)
+  _B = 5 - ( 15 + 5 / 2 ) = 5 - 10 = -5_ (points decrease)
 
 ## Starting grid and finishing positions
 
