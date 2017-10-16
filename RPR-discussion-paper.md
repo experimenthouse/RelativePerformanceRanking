@@ -96,3 +96,43 @@ In this, B is the bonus points, S is the starting position, and F is the finishi
 9. Driver errors.
 10. Collision damage.
 11. Racing incidents.
+
+## Example
+
+This example uses the current top six drivers and first 10 events of the 2017 Formula 1 World Drivers Championship. Each event has had 20 drivers enter.
+
+The team adjustment row is the difference between teammates' positions: this is divided by two before being added on. All figures have been rounded up or down as necessary.
+
+
+| Driver       | AUS | CHN | BHR | RUS | ESP | MON | CAN | AZE | AUT | GBR | Total |
+|--------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-------|
+| S Vettel     | 1   | 2   | 1   | 2   | 2   | 1   | 4   | 4   | 2   | 7   |       |
+| (race pts)   | 19  | 18  | 19  | 18  | 18  | 19  | 16  | 16  | 18  | 13  | 174   |
+| (ret adj)    |     |     |     |     |     |     |     |     |     |     |       |
+| (team adj)   | +3  | +3  | +3  | +1  | +10 | +1  | +3  | +8  | +3  | -4  | 190   |
+|--------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-------|
+| K Räikkönen  | 4   | 5   | 4   | 3   | RI  | 2   | 7   | RI  | 5   | 3   |       |
+| (race pts)   | 16  | 15  | 16  | 17  | A/2 | 18  | 13  | A/2 | 15  | 17  | 133   |
+| (ret adj)    |     |     |     |     | 8   |     |     | 8   |     |     | 149   |
+| (team adj)   | -3  | -3  | -3  | -1  | -10 | -1  | -3  | -8  | -3  | +4  | 133   |
+|--------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-------|
+| V Bottas     | 3   | 6   | 3   | 1   | MF  | 4   | 2   | 2   | 1   | 2   |       |
+| (race pts)   | 17  | 14  | 17  | 19  | Av  | 16  | 18  | 18  | 19  | 18  | 156   |
+| (ret adj)    |     |     |     |     | 17  |     |     |     |     |     | 173   |
+| (team adj)   |     |     |     |     |     |     |     |     |     |     |       |
+| (team adj)   | -1  | -5  | -1  | +3  | -2  | +3  | -1  | +3  | +3  | -1  | 174   |
+|--------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-------|
+| L Hamilton   | 2   | 1   | 2   | 4   | 1   | 7   | 1   | 5   | 4   | 1   |       |
+| (race pts)   | 18  | 19  | 18  | 16  | 19  | 13  | 19  | 15  | 16  | 19  | 172   |
+| (ret adj)    |     |     |     |     |     |     |     |     |     |     |       |
+| (team adj)   | +1  | +5  | +1  | -3  | +2  | -3  | +1  | -3  | -3  | +1  | 171   |
+|--------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-------|
+| D Ricciardo  | MF  | 4   | 5   | MF  | 3   | 3   | 3   | 1   | 3   | 5   |       |
+| (race pts)   | A   | 16  | 15  | A   | 17  | 17  | 17  | 19  | 17  | 17  | 135   |
+| (ret adj)    | 17  |     |     | 17  |     |     |     |     |     |     | 169   |
+| (team adj)   | +2  | -1  | -1  | +2  | +9  | +2  | +1  | +3  | +1  | +1  | 179   |
+|--------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-------|
+| M Verstappen | 5   | 3   | MF  | 5   | RI  | 5   | MF  | MF  | CD  | 4   |       |
+| (race pts)   | 15  | 17  | A   | 15  | A/2 | 15  | A   | A   | A   | 16  | 78    |
+| (ret adj)    |     |     | 16  |     | 8   |     | 16  | 16  | 16  |     | 150   |
+| (team adj)   | -2  | +1  | +1  | -2  | -9  | -2  | -1  | -3  | -1  | -1  | 140   |
