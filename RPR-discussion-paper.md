@@ -22,7 +22,7 @@ The points system used in Formula 1 only awards points for the top ten drivers w
 
 A linear scoring system that divides points evenly between the drivers allows for a more accurate reflection of driver abilities. This could be calculated based on the number of entrants and finishing position like so:
 
-_S = E - P_
+  _S = E - P_
 
 In this, S is the score, E is the number of entrants and P is the finishing/qualifying/lap time position. If there are 26 drivers entered for an event, the driver who finishes first will receive 25 points, and the driver who finishes last will receive no points.
 
@@ -47,7 +47,7 @@ If a driver retires during qualifying, they may still have set a time for qualif
 
 In the event of a technical failure or collision damage, a driver could be awarded an average of the points received for sessions of the same type. This ensures the driver is not penalised for retirements that were out of their control. This could be done like so:
 
-`_S = ( P / E ) * R_`
+  _S = ( P / E ) * R_
 
 In this, S is the score, P is the number of points so far, E is the number of events completed, and R is the number of retirements. This means a driver whose average points scored was 10 would receive this for each race where they retired due to circumstances beyond their control.
 
@@ -67,19 +67,19 @@ At most events drivers of the same team have identical or near-identical equipme
 
 Adjusting for teammates' differences in performance could be done by averaging their points and increasing or decreasing each drivers' points according to how far above or below the average their result is. This could be done simply like so:
 
-`_B = P - ( X + Y / 2 )_`
+  _B = P - ( X + Y / 2 )_
 
 In this, B is the bonus received, P is the points of either driver, and X and Y are the points of the drivers. For example, if one driver receives 15 points and the other receives 5 points:
 
-`_B = 15 - ( 15 + 5 / 2 ) = 15 - 10 = 5`(points increase)
+  _B = 15 - ( 15 + 5 / 2 ) = 15 - 10 = 5 (points increase)
 
-`_B = 5 - ( 15 + 5 / 2 ) = 5 - 10 = -5` (points decrease)
+  _B = 5 - ( 15 + 5 / 2 ) = 5 - 10 = -5 (points decrease)
 
 ## Starting grid and finishing positions
 
 During a race, a driver has the opportunity to make up places: they may start seventh and finish third, for example. Drivers should be rewarded for the number of positions they have gained between the starting grid and the end of the race, and penalised for the number of positions they have lost. This can be done simply by awarding or deducting one point for each place difference:
 
-`_B = S - F_`
+  _B = S - F_
 
 In this, B is the bonus points, S is the starting position, and F is the finishing position.
 
